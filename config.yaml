@@ -1,0 +1,33 @@
+name: Tuya IOT Core Reminder
+description: Home Assistant add-on to remind about Tuya IoT Core subscription expiry
+version: 0.7
+slug: tuya_iot_core_reminder
+init: false
+startup: services
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+homeassistant_api: true
+supervisor_api: true
+map:
+  - addon_config:rw
+  - config:rw
+options:
+  expiry_date: "31/12/2025"
+  expiry_time: "12:00"
+  date_format: auto
+  notify_service: notify.mobile_app_myphone
+  push_count: 1
+  push_interval_min: 60
+  debug: false
+schema:
+  expiry_date: str
+  expiry_time: str
+  date_format: list(auto|us|eu|iso)
+  notify_service: str
+  push_count: int
+  push_interval_min: int
+  debug: bool

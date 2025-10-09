@@ -1,0 +1,13 @@
+version: '3'
+services:
+  tuya-iot-core-reminder:
+    build: .
+    restart: unless-stopped
+    environment:
+      - TZ=Europe/Kiev
+      - SUPERVISOR_OPTIONS_EXPIRY_DATE=31/12/2025
+      - SUPERVISOR_OPTIONS_EXPIRY_TIME=12:00
+      - SUPERVISOR_OPTIONS_NOTIFY_SERVICE=notify.mobile_app_myphone
+      - SUPERVISOR_OPTIONS_PUSH_COUNT=2
+      - SUPERVISOR_OPTIONS_PUSH_INTERVAL_MIN=60
+      - SUPERVISOR_OPTIONS_HASS_TOKEN=homeassistant_authorization_token
