@@ -3,7 +3,7 @@
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-Addon-blue.svg?style=for-the-badge&logo=home-assistant)](https://www.home-assistant.io/)
 [![Supervisor API](https://img.shields.io/badge/Uses-Supervisor%20API-orange.svg?style=for-the-badge)]()
 [![Python](https://img.shields.io/badge/Built%20with-Python%203.9+-blue.svg?style=for-the-badge&logo=python)]()
-[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)]()
+
 
 > A lightweight Home Assistant add-on to remind about **Tuya IoT Core** subscription expiry.  
 > Sends mobile push notifications directly via the **Home Assistant Supervisor API** — no cloud, no credentials.
